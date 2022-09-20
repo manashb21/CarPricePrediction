@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Sep 20 13:08:03 2022
-
-@author: USER
-"""
 from flask import Flask, render_template, request
 import jsonify
 import requests
@@ -18,7 +12,6 @@ model = pickle.load(open('random_forest_regression_model.pkl', 'rb'))
 
 def Home():
     return render_template('index.html')
-
 
 standard_to = StandardScaler()
 
